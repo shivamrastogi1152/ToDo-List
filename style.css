@@ -1,18 +1,13 @@
 * {
-    
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body{
+    margin: 0;
+    padding: 0;
     background: rgb(97,95,130);
     background: linear-gradient(90deg, rgba(97,95,130,1) 0%, rgba(0,212,255,1) 50%, rgba(97,95,130,1) 100%);
     font-family: 'Poppins', sans-serif;
-}
-
-.maindiv{
-    vertical-align: middle;
 }
 
 .mynav{
@@ -23,6 +18,11 @@ body{
     padding: 10px;
     border: 1px solid black;
     text-align: center;
+}
+
+.maindiv{
+    /* padding-left: 324px;
+    padding-right: 100px; */
 }
 
 .input-container{
@@ -67,16 +67,53 @@ body{
 }
 
 .wrapper-div{
-    width: 50%;
+    width: 100%;
     display: flex; 
     justify-content: center;
     
 }
 
 .todo-container{
-    width: 50%;
-    justify-content: left;
+    width: 100%;
+    /* position: relative;
+    left: 224px; */
+    align-items: center;
     display: flex;
+}
+
+.todoDiv{
+    
+    margin: 5px;
+    background: white;
+    color: black;
+    display: flex;
+}
+
+.todo-item{
+    min-width: 50%;
+    margin: 5px;
+    list-style: none;
+    padding: 5px;
+    flex: 1;
+}
+
+.complete_btn{
+    
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: rgb(8, 218, 8);
+    color: black;
+    cursor: pointer;
+}
+.delete_btn{
+
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 
