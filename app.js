@@ -1,9 +1,6 @@
 const task = document.getElementById('taskInput')
 const addbtn = document.getElementById('btn');
-const todolist = document.getElementById('mylist')
-
-
-
+const todolist = document.getElementById('todolist')
 
 addbtn.addEventListener('click', addTask)
 
@@ -13,9 +10,6 @@ task.addEventListener('click',()=>{
     
     task.style.cursor = "text";
     task.style.color = "black";
-
-    task.style.font = " 'Poppins', sans-serif " //Not working? 
-
 })
 
 
@@ -34,16 +28,16 @@ function addTask(event)
     ///New LI element
     const newtodo = document.createElement('li');
     newtodo.classList.add('todo-item')
-    newtodo.innerText = 'hello';
+    newtodo.innerText = task.value ;
 
     ///New check button for current todo item
     const complete_btn = document.createElement('button');
-    complete_btn.classList.add('complete-btn');
+    complete_btn.classList.add('complete_btn');
     complete_btn.innerHTML = '<i class = "fas fa-check"></i>'; 
 
     ///New delete button for current todo item
     const delete_btn = document.createElement('button');
-    delete_btn.classList.add('delete-btn');
+    delete_btn.classList.add('delete_btn');
     delete_btn.innerHTML = '<i class = "fas fa-trash"></i>'; 
 
     ///Add 3 elements to todoDiv
