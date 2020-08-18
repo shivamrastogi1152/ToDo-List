@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>   
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />    
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+    <nav class="mynav">This is my navbar</nav>
+    <h1 style="text-align: center; margin-top: 20px; margin-bottom:20px;">Manage your tasks!</h1>
+
+    <div class="maindiv">
+
+        <div class="input-container">
+
+            <form class="form">
+            
+                <input class="input" id="taskInput" type="text" value="Add a task!">
+                <button class="btn"  id="btn"> <i class="fas fa-plus"> </i> </button>
+                
+                <select class="selector">
+                <option value="0">Filter By:</option>
+                <option value="1">Date</option>
+                <option value="2">Done</option>
+                <option value="2">Random</option>
+                </select>
+
+            </form>
+
+        </div>
+
+        <div class="wrapper-div">
+            
+            <div class="todo-container">
+
+                <ol class="mylist" id="mylist">
+
+                    <!-- Create below part dynamically through javascript -->
+                    <!-- <div class="todoDiv">
+                        <li class="todo-item"></li>
+                        <button class="completed-btn"></button>
+                        <button class="delete-btn"></button>
+                    </div> -->
+
+                </ol>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

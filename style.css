@@ -1,0 +1,84 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(97,95,130);
+    background: linear-gradient(90deg, rgba(97,95,130,1) 0%, rgba(0,212,255,1) 50%, rgba(97,95,130,1) 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.maindiv{
+    vertical-align: middle;
+}
+
+.mynav{
+    color: white;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.425),black);
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.input-container{
+    margin-top: 50px;
+    display: flex;
+}
+
+.form {
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+}
+
+.input{
+    color: gray;
+    width: 50%; 
+    justify-content: center; 
+    padding: 10px; 
+    margin: 5px 10px 5px 10px";
+}
+
+.btn{
+
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;    
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.selector
+{       
+    width: 100px;
+    height: 40px;
+    margin: 5px 5px 5px 5px;
+}
+
+.wrapper-div{
+    width: 50%;
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.todo-container{
+    width: 50%;
+    justify-content: left;
+    display: flex;
+}
+
+
+
+
